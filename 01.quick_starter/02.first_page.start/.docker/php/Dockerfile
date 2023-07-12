@@ -33,4 +33,11 @@ RUN ln -snf /usr/share/zoneinfo/${TIMEZONE} /etc/localtime && echo ${TIMEZONE} >
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+# Usermod
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~
+RUN usermod -u 1000 www-data
+RUN ls -l
+#RUN chmod -R 777 uploads/*
+#RUN chmod -R 777 public/images/*
+
 WORKDIR /var/www/symfony

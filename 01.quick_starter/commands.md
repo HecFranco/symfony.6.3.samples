@@ -1,4 +1,3 @@
-```bash
-$ php bin/console cache:clear
-$ php bin/console c:c
-```
+## comandos
+
+* `php bin/console cache:clear`, o `php bin/console c:c`
